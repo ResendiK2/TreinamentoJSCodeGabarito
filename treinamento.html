@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Treinamento de JS</title>
+</head>
+
+<body class="body-class" id="body">
+    <div class="content-title">
+        <h1>Treinamento de JavaScript</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="content-list">
+            <div class="col-5">
+                <div class="form-group">
+                    <input 
+                        type="text"
+                        class="form-control" 
+                        id="inputItemList"
+                        placeholder="Digite aqui">
+                </div>
+                
+                <div class="content-button">
+                    <button
+                        id="btn" 
+                        type="submit" 
+                        id="btnLista" 
+                        onclick="addItem()" 
+                        class="btn btn-primary mt-3">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="list" >
+            <ul class="list-group col-7" id="list">
+                <li class="list-group-item list" >
+                    Lista VIP pra Danke pós covid
+                </li>
+            </ul>
+        </div>
+        <div class="mt-5 content-image">
+            <div class="content-image" >
+                <h3 id="title">Título da imagem</h3>
+                    <img 
+                        src="https://media-exp1.licdn.com/dms/image/C4E0BAQHJVUdjXcahnQ/company-logo_200_200/0?e=2159024400&v=beta&t=jzN30LRzuT9F1uzXKHmVyd_KzeZOvH2tfhj22z2AWfQ" 
+                        id="image" 
+                        style="height:200px;"
+                    >
+            </div>
+            <input 
+                type="text" 
+                class="form-control col-5" 
+                oninput="changeTitle()" 
+                id="inputTitle"
+                placeholder="Digite para mudar o título">
+            
+            <div>
+                <button
+                    id="btn" 
+                    class="btn btn-primary mt-3" 
+                    onclick="setTitle()" 
+                    type="submit"
+                >
+                    Fixar Título
+                </button>
+                <button
+                    id="btn" 
+                    class="btn btn-primary mt-3" 
+                    onclick="changeUrlImg()" 
+                    type="submit"
+                >
+                    Mudar Imagem
+                </button>
+                
+                <button
+                    id="btn" 
+                    class="btn btn-primary mt-3" 
+                    onclick="removeClass()" 
+                    type="submit"
+                >
+                    Remover Classe
+                </button>
+            </div>
+        </div>
+        <div class="content-button">
+            <button
+                id="btn" 
+            type="submit" 
+            id="btnLista" 
+            onclick="changeClass()" 
+            class="btn btn-primary mt-3">
+            Vamo deixar tudo vermelho
+        </button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./script.js"></script>
+    
+    <script 
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
+    
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous">
+    </script>
+
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous">
+    </script>
+    
+</body>
+
+</html>
